@@ -2,8 +2,10 @@ import firebase from 'firebase/app';
 import "firebase/analytics";
 import 'firebase/auth';
 import 'firebase/firestore';
+import {googleApiKey} from './key.js';
+
 var firebaseConfig = {
-    apiKey: "AIzaSyCV9tF0dLP0xwv0OshBtF8TLc6E7Lwu7Y0",
+    apiKey: googleApiKey(),
     authDomain: "meal-planner-1336c.firebaseapp.com",
     databaseURL: "https://meal-planner-1336c.firebaseio.com",
     projectId: "meal-planner-1336c",
