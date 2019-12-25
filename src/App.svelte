@@ -1,5 +1,6 @@
 <script>
     import Profile from './Profile.svelte';
+    import RecipeList from './RecipeList.svelte';
 
     import { auth, googleProvider } from './firebase';
     import { authState } from 'rxfire/auth';
@@ -20,6 +21,7 @@ Hi ya,
     <Profile {...user} />
     <button on:click={ () => auth.signOut() }>Logout</button>
     <hr>
+    <RecipeList uid={user.uid} />
 {:else}
 	<button on:click={login}>
 		Signin with Google
