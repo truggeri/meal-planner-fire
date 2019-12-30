@@ -19,12 +19,13 @@ Hi ya,
 <section>
 {#if user}
     <Profile {...user} />
-    <button on:click={ () => auth.signOut() }>Logout</button>
-    <hr>
+    <button class="waves-effect waves-light btn" on:click={ () => auth.signOut() }>
+      Logout<i class="material-icons right">exit_to_app</i>
+    </button>
     <RecipeList uid={user.uid} />
 {:else}
-	<button on:click={login}>
-		Signin with Google
+	<button class="waves-effect waves-light btn" on:click={login}>
+		Signin with Google<i class="material-icons right">person</i>
 	</button>
 {/if}
 </section>
