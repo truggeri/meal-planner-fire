@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "firebase": "^7.6.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "rollup-plugin-css-only": "^2.0.0",
     "rxfire": "^3.9.6",
     "rxjs": "^6.5.3",
     "sirv-cli": "^0.4.4"
